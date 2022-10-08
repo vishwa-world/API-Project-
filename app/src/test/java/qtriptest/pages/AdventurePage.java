@@ -11,13 +11,14 @@ import qtriptest.SeleniumWrapper;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class AdventurePage {
     
-    ChromeDriver driver;
+    RemoteWebDriver driver;
     
     @FindBy(id = "duration-select")
     WebElement durationFilter;
@@ -32,7 +33,7 @@ public class AdventurePage {
     WebElement clearCategory;
 
 
-    public AdventurePage(ChromeDriver driver)
+    public AdventurePage( RemoteWebDriver driver)
     {
      this.driver = driver;   
      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

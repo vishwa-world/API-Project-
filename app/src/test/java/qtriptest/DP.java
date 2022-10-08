@@ -33,9 +33,9 @@ public class DP {
                 Cell cell = cellIterator.next();                
                 if(rowIndex>0 && cellIndex>0)
                 {
-                    if(cell.getCellType()==Cell.CELL_TYPE_STRING) {
+                    if(cell.getCellType()==CellType.STRING) {
                         innerList.add(cell.getStringCellValue());
-                    } else if (cell.getCellType()==Cell.CELL_TYPE_NUMERIC) {
+                    } else if (cell.getCellType()==CellType.NUMERIC) {
                         innerList.add( String.valueOf(cell.getNumericCellValue()));
                     }
                 }

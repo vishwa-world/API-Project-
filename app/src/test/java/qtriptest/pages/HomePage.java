@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -14,7 +15,7 @@ import qtriptest.SeleniumWrapper;
 
 public class HomePage {
 
-    ChromeDriver driver;
+    RemoteWebDriver driver;
     
     @FindBy(xpath = "//div[text()='Logout']")
     WebElement logoutButton;
@@ -35,6 +36,9 @@ public class HomePage {
      PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
     }
     
+    public HomePage(RemoteWebDriver driver2) {
+    }
+
     public void gotoHomePage() throws InterruptedException
     {
         SeleniumWrapper.navigate(this.driver, "https://qtripdynamic-qa-frontend.vercel.app/");

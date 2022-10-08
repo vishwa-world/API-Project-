@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -12,7 +13,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import qtriptest.SeleniumWrapper;
 
 public class RegisterPage {
-    ChromeDriver driver;
+    RemoteWebDriver driver;
     public String lastGeneratedUsername = "";
 
     @FindBy(id = "floatingInput")
@@ -27,10 +28,10 @@ public class RegisterPage {
     @FindBy(xpath = "//button[text()='Register Now']")
     WebElement registerNowButton;
 
-    public RegisterPage(ChromeDriver driver) {
-        this.driver = driver;
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
+    public RegisterPage(RemoteWebDriver driver2) {
+        this.driver = driver2;
+        driver2.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        PageFactory.initElements(new AjaxElementLocatorFactory(driver2, 20), this);
     }
 
     public void registerNewUser(String userName, String password, String confirmPassword, Boolean makeDynamic) {

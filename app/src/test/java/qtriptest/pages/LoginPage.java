@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -12,7 +13,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import qtriptest.SeleniumWrapper;
 
 public class LoginPage {
-    ChromeDriver driver;
+    RemoteWebDriver driver;
 
     @FindBy(id="floatingInput")
     WebElement emailTextBox;
@@ -23,11 +24,11 @@ public class LoginPage {
     @FindBy(xpath = "//button[text()='Login to QTrip']")
     WebElement loginButton;
 
-    public LoginPage(ChromeDriver driver)
+    public LoginPage(RemoteWebDriver driver2)
     {
-     this.driver = driver;   
-     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-     PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
+     this.driver = driver2;   
+     driver2.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+     PageFactory.initElements(new AjaxElementLocatorFactory(driver2, 20), this);
     }
 
     public void performLogin(String username , String password)

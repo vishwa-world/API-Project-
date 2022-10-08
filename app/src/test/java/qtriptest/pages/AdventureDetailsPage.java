@@ -3,6 +3,7 @@ package qtriptest.pages;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -11,7 +12,7 @@ import qtriptest.SeleniumWrapper;
 
 public class AdventureDetailsPage {
 
-    ChromeDriver driver;
+    RemoteWebDriver driver;
     
     @FindBy(xpath = "//input[@name='name']")
     WebElement nameTextBox;
@@ -25,7 +26,7 @@ public class AdventureDetailsPage {
     @FindBy(xpath = "//button[text()='Reserve']")
     WebElement reserveButton;
 
-    public AdventureDetailsPage(ChromeDriver driver)
+    public AdventureDetailsPage(RemoteWebDriver driver)
     {
      this.driver = driver;   
      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
