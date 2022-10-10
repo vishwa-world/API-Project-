@@ -37,6 +37,7 @@ dependencies {
     
 }
 
+buildDir = '/tmp/external_build'
 application {
     // Define the main class for the application.
     mainClass = 'qtriptest.App'
@@ -67,3 +68,10 @@ test {
     test.outputs.upToDateWhen {false}
 
 }
+task startScript(type:Exec) {
+    commandLine '../selenium-run.sh'
+}
+
+run.dependsOn startScript
+
+test.dependsOn startScript

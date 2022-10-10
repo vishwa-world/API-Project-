@@ -13,9 +13,6 @@ import java.util.UUID;
 
 public class testCase_API_04 {
 
-    @Test(description = "Verify that a duplicate user account cannot be created on Qtrip", groups = {"API Tests"})
-    public static void TestCase04() throws InterruptedException {
-    }
 
     }
 

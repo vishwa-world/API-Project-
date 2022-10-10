@@ -16,7 +16,5 @@ import java.util.UUID;
 
 public class testCase_API_01 {
     
-    @Test(description = "Verify that a new user can be registered and login using APIs of QTrip", groups = {"API Tests"})
-    public static void TestCase01() throws InterruptedException {
-    }
+   
 }

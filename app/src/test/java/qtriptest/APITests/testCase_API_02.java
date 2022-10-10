@@ -16,12 +16,10 @@ import java.io.File;
 import java.util.LinkedHashMap;
 import java.util.UUID;
 public class testCase_API_02 {
-    @Test(description = "Verify that the search City API Returns the correct number of results", groups = {"API Tests"})
-    public static void TestCase02() throws InterruptedException {
 
 
 
-    }
+    
 
 
 }
