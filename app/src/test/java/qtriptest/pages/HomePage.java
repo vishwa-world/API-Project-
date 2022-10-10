@@ -29,15 +29,13 @@ public class HomePage {
     @FindBy(xpath = "//h5[text()='No City found']")
     WebElement noCityfound;
 
-    public HomePage(ChromeDriver driver)
+    public HomePage(RemoteWebDriver driver)
     {
      this.driver = driver;   
      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
      PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
     }
     
-    public HomePage(RemoteWebDriver driver2) {
-    }
 
     public void gotoHomePage() throws InterruptedException
     {

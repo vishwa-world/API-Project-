@@ -50,8 +50,7 @@ public class testCase_01 {
     @AfterSuite
     public static void quitDriver() throws InterruptedException
     {
-        driver.manage().deleteAllCookies();
-        driver.resetInputState();
+        driver.quit();
     }
 
 }
