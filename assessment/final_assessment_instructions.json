@@ -1,8 +1,8 @@
 {
     "assesments":[
         {
-            "assesmentDescription":"Verify that all 3 test cases have passed",
-            "find":".//test-method[contains(@name,'TestCase') and @status='PASS']",
+            "assesmentDescription":"Verify that all 4 test cases have passed",
+            "find":".//test-method[@status='PASS']",
             "expectedCount":4,
             "errorMessage":"All 4 API test cases havent passed"
         },
