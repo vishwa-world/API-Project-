@@ -1,8 +1,11 @@
 package qtriptest.tests;
 
 import qtriptest.DP;
-import qtriptest.DriverFactory;
+import qtriptest.DriverSingleton;
+
+import java.net.MalformedURLException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -12,12 +15,12 @@ import qtriptest.pages.LoginPage;
 import qtriptest.pages.RegisterPage;
 
 public class testCase_01 {
-    static ChromeDriver driver;
+    static RemoteWebDriver driver;
 
     @BeforeTest()
-    public static void createDriver() {
+    public static void createDriver()  throws MalformedURLException {
         // IMPORTANT!: Enter the Driver Location here
-        DriverFactory sbc1= DriverFactory.getInstanceOfSingletonBrowserClass();
+        DriverSingleton sbc1= DriverSingleton.getInstanceOfSingletonBrowserClass();
 		driver = sbc1.getDriver();
     }
 

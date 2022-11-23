@@ -1,4 +1,4 @@
-
+// CRIO_SOLUTION_START_MODULE_API_TESTING
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -61,3 +61,4 @@
   }
 
 }
+// CRIO_SOLUTION_END_MODULE_API_TESTING
