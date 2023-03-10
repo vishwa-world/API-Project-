@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test for QTRIP">
+    <test name="TestCase">
+        <groups>
+            <run>
+                <!-- <include name="API TESTING"></include> -->
+                <!-- <classes>
+                    <class name="qtriptest.APITests.testCase_API_01"></class>
+                    <class name="qtriptest.APITests.testCase_API_02"></class>
+                    <class name="qtriptest.APITests.testCase_API_03"></class>
+                    <class name="qtriptest.APITests.testCase_API_04"></class>
+                </classes> -->
+                <packages>
+                    <package name="qtriptest.APITests"/>
+                </packages>
+            </run>
+        </groups>
+    </test>
+</suite>

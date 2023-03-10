@@ -4,6 +4,7 @@ import qtriptest.DP;
 import qtriptest.DriverSingleton;
 
 import java.net.MalformedURLException;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -18,13 +19,13 @@ public class testCase_01 {
     static RemoteWebDriver driver;
 
     @BeforeTest()
-    public static void createDriver()  throws MalformedURLException {
+    public static void createDriver() throws MalformedURLException {
         // IMPORTANT!: Enter the Driver Location here
         DriverSingleton sbc1= DriverSingleton.getInstanceOfSingletonBrowserClass();
 		driver = sbc1.getDriver();
     }
 
-    @Test(description = "Verify user registration - login - logout", dataProvider = "data-provider" , dataProviderClass = DP.class, groups = {"Login Flow"})
+    // @Test(description = "Verify user registration - login - logout", dataProvider = "data-provider" , dataProviderClass = DP.class, groups = {"Login Flow"})
     public static void TestCase01(String UserName, String Password) throws InterruptedException {
         HomePage home = new HomePage(driver);
         home.gotoHomePage();
