@@ -12,7 +12,7 @@
                     <class name="qtriptest.APITests.testCase_API_04"></class>
                 </classes> -->
                 <packages>
-                    <package name="qtriptest.APITests"/>
+                    <package name="qtriptest.*"/>
                 </packages>
             </run>
         </groups>

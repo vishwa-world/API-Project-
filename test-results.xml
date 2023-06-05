@@ -1,41 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-10T18:20:36 IST" name="API Test for QTRIP" finished-at="2023-03-10T18:20:53 IST" duration-ms="16957">
+  <suite started-at="2023-06-05T15:14:42 IST" name="API Test for QTRIP" finished-at="2023-06-05T15:17:19 IST" duration-ms="157002">
     <groups>
       <group name="API TESTING">
-        <method signature="testCase_API_01.TestCase01()[pri:1, instance:qtriptest.APITests.testCase_API_01@2dfaea86]" name="TestCase01" class="qtriptest.APITests.testCase_API_01"/>
-        <method signature="testCase_API_02.TestCase02()[pri:2, instance:qtriptest.APITests.testCase_API_02@65f8f5ae]" name="TestCase02" class="qtriptest.APITests.testCase_API_02"/>
-        <method signature="testCase_API_03.TestCase03()[pri:3, instance:qtriptest.APITests.testCase_API_03@68c9d179]" name="TestCase03" class="qtriptest.APITests.testCase_API_03"/>
-        <method signature="testCase_API_04.Testcase04()[pri:4, instance:qtriptest.APITests.testCase_API_04@d554c5f]" name="Testcase04" class="qtriptest.APITests.testCase_API_04"/>
+        <method signature="testCase_API_01.TestCase01()[pri:1, instance:qtriptest.APITests.testCase_API_01@6c7a164b]" name="TestCase01" class="qtriptest.APITests.testCase_API_01"/>
+        <method signature="testCase_API_02.TestCase02()[pri:2, instance:qtriptest.APITests.testCase_API_02@34129c78]" name="TestCase02" class="qtriptest.APITests.testCase_API_02"/>
+        <method signature="testCase_API_03.TestCase03()[pri:3, instance:qtriptest.APITests.testCase_API_03@7d61eb55]" name="TestCase03" class="qtriptest.APITests.testCase_API_03"/>
+        <method signature="testCase_API_04.Testcase04()[pri:4, instance:qtriptest.APITests.testCase_API_04@222a59e6]" name="Testcase04" class="qtriptest.APITests.testCase_API_04"/>
       </group> <!-- API TESTING -->
+      <group name="Login Flow">
+        <method signature="testCase_01.TestCase01(java.lang.String,java.lang.String)[pri:0, instance:qtriptest.tests.testCase_01@16612a51]" name="TestCase01" class="qtriptest.tests.testCase_01"/>
+      </group> <!-- Login Flow -->
     </groups>
-    <test started-at="2023-03-10T18:20:36 IST" name="TestCase" finished-at="2023-03-10T18:20:53 IST" duration-ms="16957">
+    <test started-at="2023-06-05T15:14:42 IST" name="TestCase" finished-at="2023-06-05T15:17:19 IST" duration-ms="157002">
       <class name="qtriptest.APITests.testCase_API_01">
-        <test-method signature="TestCase01()[pri:1, instance:qtriptest.APITests.testCase_API_01@2dfaea86]" started-at="2023-03-10T18:20:51 IST" name="TestCase01" finished-at="2023-03-10T18:20:53 IST" duration-ms="2663" status="PASS">
+        <test-method signature="TestCase01()[pri:1, instance:qtriptest.APITests.testCase_API_01@6c7a164b]" started-at="2023-06-05T15:17:16 IST" name="TestCase01" finished-at="2023-06-05T15:17:19 IST" duration-ms="2882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
       </class> <!-- qtriptest.APITests.testCase_API_01 -->
       <class name="qtriptest.APITests.testCase_API_02">
-        <test-method signature="TestCase02()[pri:2, instance:qtriptest.APITests.testCase_API_02@65f8f5ae]" started-at="2023-03-10T18:20:37 IST" name="TestCase02" finished-at="2023-03-10T18:20:42 IST" duration-ms="5936" status="PASS">
+        <test-method signature="TestCase02()[pri:2, instance:qtriptest.APITests.testCase_API_02@34129c78]" started-at="2023-06-05T15:17:00 IST" name="TestCase02" finished-at="2023-06-05T15:17:07 IST" duration-ms="7322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02 -->
       </class> <!-- qtriptest.APITests.testCase_API_02 -->
       <class name="qtriptest.APITests.testCase_API_03">
-        <test-method signature="TestCase03()[pri:3, instance:qtriptest.APITests.testCase_API_03@68c9d179]" started-at="2023-03-10T18:20:42 IST" name="TestCase03" finished-at="2023-03-10T18:20:48 IST" duration-ms="5591" status="PASS">
+        <test-method signature="TestCase03()[pri:3, instance:qtriptest.APITests.testCase_API_03@7d61eb55]" started-at="2023-06-05T15:17:07 IST" name="TestCase03" finished-at="2023-06-05T15:17:13 IST" duration-ms="5998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase03 -->
       </class> <!-- qtriptest.APITests.testCase_API_03 -->
       <class name="qtriptest.APITests.testCase_API_04">
-        <test-method signature="Testcase04()[pri:4, instance:qtriptest.APITests.testCase_API_04@d554c5f]" started-at="2023-03-10T18:20:48 IST" name="Testcase04" finished-at="2023-03-10T18:20:51 IST" duration-ms="2657" status="PASS">
+        <test-method signature="Testcase04()[pri:4, instance:qtriptest.APITests.testCase_API_04@222a59e6]" started-at="2023-06-05T15:17:13 IST" name="Testcase04" finished-at="2023-06-05T15:17:16 IST" duration-ms="3564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase04 -->
       </class> <!-- qtriptest.APITests.testCase_API_04 -->
+      <class name="qtriptest.tests.testCase_01">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.testCase_01@16612a51]" started-at="2023-06-05T15:14:42 IST" name="createDriver" finished-at="2023-06-05T15:14:47 IST" duration-ms="4713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:0, instance:qtriptest.tests.testCase_01@16612a51]" started-at="2023-06-05T15:14:48 IST" name="TestCase01" description="Verify user registration - login - logout" data-provider="data-provider" finished-at="2023-06-05T15:15:33 IST" duration-ms="44701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:0, instance:qtriptest.tests.testCase_01@16612a51]" started-at="2023-06-05T15:15:33 IST" name="TestCase01" description="Verify user registration - login - logout" data-provider="data-provider" finished-at="2023-06-05T15:16:16 IST" duration-ms="43391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TESTUSER@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:0, instance:qtriptest.tests.testCase_01@16612a51]" started-at="2023-06-05T15:16:16 IST" name="TestCase01" description="Verify user registration - login - logout" data-provider="data-provider" finished-at="2023-06-05T15:16:59 IST" duration-ms="43049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123_USER_low@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QWERTY!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:qtriptest.tests.testCase_01@16612a51]" started-at="2023-06-05T15:17:19 IST" name="quitDriver" finished-at="2023-06-05T15:17:19 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- qtriptest.tests.testCase_01 -->
     </test> <!-- TestCase -->
   </suite> <!-- API Test for QTRIP -->
 </testng-results>

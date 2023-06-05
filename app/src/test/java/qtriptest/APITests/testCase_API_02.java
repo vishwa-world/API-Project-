@@ -27,12 +27,12 @@ public class testCase_API_02 {
                 "Failed to validate that the search city response status code is 200");
         String resBody = body.asString();
         JsonPath jpath = new JsonPath(resBody);
-        String description = jpath.getString("description");
+        String description = jpath.getString(   "description");
         Assert.assertEquals(resBody.contains("description"), true,
                 "Failed to validate that description field is present in the search response body");
         Assert.assertEquals(description, "[100+ Places]",
                 "Failed to validate the contents of search response description field");
-        int searchResSize = jpath.getInt("size()");
+                int searchResSize = jpath.getInt("size()");
         // System.out.println("Length of the Json Array is:"+s);
         Assert.assertEquals(searchResSize, 1, "Failed to validate that search size response is 1");
         response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File(

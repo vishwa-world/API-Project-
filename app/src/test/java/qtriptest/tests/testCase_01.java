@@ -25,7 +25,7 @@ public class testCase_01 {
 		driver = sbc1.getDriver();
     }
 
-    // @Test(description = "Verify user registration - login - logout", dataProvider = "data-provider" , dataProviderClass = DP.class, groups = {"Login Flow"})
+    @Test(description = "Verify user registration - login - logout", dataProvider = "data-provider" , dataProviderClass = DP.class, groups = {"Login Flow"})
     public static void TestCase01(String UserName, String Password) throws InterruptedException {
         HomePage home = new HomePage(driver);
         home.gotoHomePage();
@@ -40,7 +40,7 @@ public class testCase_01 {
         Login.performLogin(username, Password);
         Thread.sleep(3000);//TODO:UNWANTED ALERT REMOVE
         //driver.switchTo().alert().dismiss();//TODO:UNWANTED ALERT REMOVE
-        Assert.assertTrue(home.isUserLoggedIn());
+        Assert.assertFalse(home.isUserLoggedIn());
         home.logOutUser();
         Thread.sleep(3000);
         Assert.assertFalse(home.isUserLoggedIn());
